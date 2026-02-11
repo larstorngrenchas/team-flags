@@ -54,6 +54,7 @@ services:
       - NODE_ENV=${NODE_ENV:-production}
       - MONGODB_URI=${MONGODB_URI:-mongodb://admin:password@db:27017/team-flags-edu?authSource=admin}
       - MONGODB_DB=${MONGODB_DB:-team-flags-edu}
+      - MY_CUSTOM_MESSAGE=${MY_CUSTOM_MESSAGE}  # Add this line
       - STUDENTS_COLLECTION=${STUDENTS_COLLECTION:-students}
       - APP_VERSION=${APP_VERSION:-1.0.0}
       # Firebase (optional - for Week 5+)
